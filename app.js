@@ -11,8 +11,9 @@ const flash = require('connect-flash');
 const errorController = require('./controllers/error');
 const User = require('./models/user');
 
-const MONGODB_URI =
-  '';
+require('dotenv').config();
+
+const MONGODB_URI = process.env.MONGODB_URI ;
 
 const app = express();
 const store = new MongoDBStore({
