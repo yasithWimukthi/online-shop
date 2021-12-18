@@ -11,6 +11,7 @@ const multer = require('multer');
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
+
 require('dotenv').config();
 
 const MONGODB_URI = process.env.MONGODB_URI;
